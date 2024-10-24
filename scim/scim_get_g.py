@@ -2,8 +2,10 @@ import requests
 import base64
 import json
 from getpass import getpass
+import scim_abort
 
 def main():
+    success = 0
     s1 = input("Introduzca el nombre del tenant:")
     us = input("Introduzca el nombre del grupo:")
     token = getpass("Introduzca token:")
@@ -19,4 +21,6 @@ def main():
         for x in i.json().get('Resources'):
          if x['displayName'] == us:
           print(json.dumps(x,indent=4))
-
+          success = 1
+        if success != 1:
+            scim_abort.main()

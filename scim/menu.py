@@ -6,6 +6,7 @@ import scim_get_g
 import scim_put_group
 import scim_update_group
 import privateapp
+import get_pub_id
 
 menu = {}
 menu['1']="Crear Usuario" 
@@ -16,7 +17,8 @@ menu['5']="Leer Grupo"
 menu['6']="Crear Grupo"
 menu['7']="Actualizar Grupo"
 menu['8']="Cargar Aplicaciones Privadas"
-menu['9']="Salir"
+menu['9']="Leer Publisher ID"
+menu['0']="Salir"
 while True: 
     options=menu.keys()
     for entry in options: 
@@ -39,7 +41,9 @@ while True:
       scim_update_group.main() 
     elif selection == '8':
       privateapp.main() 
-    elif selection == '9': 
+    elif selection == '9':
+      get_pub_id.main() 
+    elif selection == '0': 
       break
     else: 
       print ("Opción no aceptada")

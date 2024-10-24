@@ -9,3 +9,4 @@ def getuid(s1,token,us):
     for x in i.json().get('Resources'):
      if x['userName'] == us:
       return(x['id'])
+    return("0")
