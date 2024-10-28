@@ -1,5 +1,6 @@
 # netskopeapicontainer
 # git clone https://github.com/hutama44/netskopeapicontainer
+# cd netskopeapicontainer
 # sudo docker image build -t netskope/apicont .
 # Opción 1: Sin requerimientos de creación de aplicaciones desde un archivo de texto separado por comas: 
 # sudo docker container run --rm -ti netskope/apicont
