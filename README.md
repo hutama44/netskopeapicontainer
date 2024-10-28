@@ -1,7 +1,7 @@
 # About
 CLI interface to interact with Netskope's API in container format
 
-#Usage
+# Usage
 Clone the repository locally:
 ```
 git clone https://github.com/hutama44/netskopeapicontainer
