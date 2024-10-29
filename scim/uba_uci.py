@@ -9,11 +9,14 @@ def main():
     s1 = input("Introduzca el nombre del tenant:")
     user = input("Introduzca el upn:")
     token = getpass("Introduzca token:")
-    s2 = "https://" + s1 + ".goskope.com/api/v2/ubadatasvc/user/uci"
-    headers1 = {'Netskope-Api-Token':token,'accept':'application/json','Content-Type':'application/json'}
     rtime = input("Introduza fecha de inicio de búsqueda en formato d/m/y:" )
     ttime = datetime.datetime.strptime(rtime + " 00:00:00", "%d/%m/%Y %H:%M:%S").timestamp()
     ttime = str(ttime).replace(".","") + "00"
+    getuci(s1,user,token,ttime)
+
+def getuci(s1,user,token,ttime):
+    s2 = "https://" + s1 + ".goskope.com/api/v2/ubadatasvc/user/uci"
+    headers1 = {'Netskope-Api-Token':token,'accept':'application/json','Content-Type':'application/json'}
     data = {'fromTime':int(ttime),'user':user}
     print(ttime)
     with requests.Session() as s:
