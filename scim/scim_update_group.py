@@ -9,6 +9,9 @@ def main():
     token = getpass("Introduzca token:")
     upn = input("Introduzca upn del Usuario:")
     gp = input("Introduzca nombre del grupo:")
+    updategroup(s1,token,upn,gp)
+
+def updategroup(s1,token,upn,gp):
 
     user_id = getuid(s1,token,upn)
     group = getguid(s1,token,gp)

@@ -15,7 +15,7 @@ def main():
 def deletegroup(s1,token,s2,group):
 
         headers1 = {'Netskope-Api-Token':token, 'accept':'*/*'}
-        print(s1,group)
+#        print(s1,group)
         id=scim_get_guid.getguid(s1,token,group)
         with requests.Session() as s:
             i = s.delete(s2+id,headers=headers1)

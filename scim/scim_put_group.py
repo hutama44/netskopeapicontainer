@@ -7,13 +7,12 @@ import scim_get_uid
 def main():
         s1 = input("Introduzca el nombre del tenant:")
         token = getpass("Introduzca token:")
-        s2 = "https://" + s1 + ".goskope.com/api/v2/scim/Groups"
         group = input("Introduzca upn del grupo:")
         user_upn = input("Introduzca UPN del Usuario:")
+        creategroup(s1,token,group,user_upn)
 
-        creategroup(s1,token,s2,group,user_upn)
-
-def creategroup(s1,token,s2,group,user_upn):
+def creategroup(s1,token,group,user_upn):
+        s2 = "https://" + s1 + ".goskope.com/api/v2/scim/Groups"
 
         headers1 = {'Netskope-Api-Token':token, 'accept':'application/scim+json;charset=utf-8', 'Content-Type': 'application/scim+json;charset=utf-8'}
         user_id = scim_get_uid.getuid(s1,token,user_upn)

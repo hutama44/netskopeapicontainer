@@ -22,8 +22,9 @@ def getuci(s1,user,token,ttime):
     with requests.Session() as s:
         i = s.post(s2,headers=headers1,data=json.dumps(data))
         print(i)
-        print(i.text)
-
+#        print(i.text)
+        print(i.json().get('confidences')[0].get('confidenceScore'))
+        return(i.json().get('confidences')[0].get('confidenceScore'))
 #    for x in i.json().get('Resources'):
 #     if x['userName'] == us:
 #      return(x['id'])

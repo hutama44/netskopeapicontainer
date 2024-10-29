@@ -9,6 +9,7 @@ import privateapp
 import get_pub_id
 import uba_uci
 import scim_delete_group
+import ucidemo
 
 menu = {}
 menu['1']="Crear Usuario" 
@@ -22,6 +23,7 @@ menu['8']="Borrar Grupo"
 menu['9']="Cargar Aplicaciones Privadas"
 menu['10']="Leer Publisher ID"
 menu['11']="Leer UCI de Usuario"
+menu['12']="UCI Demo"
 menu['0']="Salir"
 while True: 
     options=menu.keys()
@@ -51,6 +53,8 @@ while True:
       get_pub_id.main() 
     elif selection == 11:
       uba_uci.main() 
+    elif selection == 12:
+      ucidemo.main() 
     elif selection == 0: 
       break
     else: 
