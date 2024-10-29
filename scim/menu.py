@@ -13,19 +13,19 @@ import scim_update_rm_group
 import ucidemo
 
 menu = {}
-menu['1']="Crear Usuario" 
-menu['2']="Leer Usuario"
-menu['3']="Borrar Usuario"
-menu['4']="Borrado Masivo"
-menu['5']="Leer Grupo"
-menu['6']="Crear Grupo"
-menu['7']="Actualizar Grupo"
-menu['8']="Borrar Grupo"
-menu['9']="Borrar Usuario de Grupo"
-menu['10']="Cargar Aplicaciones Privadas"
-menu['11']="Leer Publisher ID"
-menu['12']="Leer UCI de Usuario"
-menu['13']="UCI Demo"
+menu['1']="SCIM - Crear Usuario" 
+menu['2']="SCIM - Leer Usuario"
+menu['3']="SCIM - Borrar Usuario"
+menu['4']="SCIM - Borrado Masivo"
+menu['5']="SCIM - Leer Grupo"
+menu['6']="SCIM - Crear Grupo"
+menu['7']="SCIM - Actualizar Grupo"
+menu['8']="SCIM - Borrar Grupo"
+menu['9']="SCIM - Borrar Usuario de Grupo"
+menu['10']="ZTNA - Cargar Aplicaciones Privadas"
+menu['11']="ZTNA - Leer Publisher ID"
+menu['12']="UEBA - Leer UCI de Usuario"
+menu['13']="UEBA - UCI Demo"
 menu['0']="Salir"
 while True: 
     options=menu.keys()
