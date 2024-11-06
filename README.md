@@ -1,6 +1,5 @@
 # About/Acerca de
-CLI interface to interact with Netskope's API in container format
-Interface CLI para interactuar con el API de Netskope en formato de contenedor
+CLI interface to interact with Netskope's API in container format / Interface CLI para interactuar con el API de Netskope en formato de contenedor
 
 # Usage/Uso
 Clone the repository locally: / Clonar el repositorio localmente:
