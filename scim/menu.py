@@ -12,6 +12,7 @@ import scim_delete_group
 import scim_update_rm_group
 import ucidemo
 import uba_uci_update
+import uba_reset
 
 menu = {}
 menu['1']="SCIM - Crear Usuario" 
@@ -27,7 +28,8 @@ menu['10']="ZTNA - Cargar Aplicaciones Privadas"
 menu['11']="ZTNA - Leer Publisher ID"
 menu['12']="UEBA - Leer UCI de Usuario"
 menu['13']="UEBA - Afectar UCI"
-menu['14']="UEBA - UCI Demo"
+menu['14']="UEBA - UCI Reset"
+menu['15']="UEBA - UCI Demo"
 menu['0']="Salir"
 while True: 
     options=menu.keys()
@@ -62,6 +64,8 @@ while True:
     elif selection == 13:
       uba_uci_update.main() 
     elif selection == 14:
+      uba_reset.main() 
+    elif selection == 15:
       ucidemo.main() 
     elif selection == 0: 
       break
