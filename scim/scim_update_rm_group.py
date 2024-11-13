@@ -15,6 +15,10 @@ def updategroup(s1,token,upn,gp):
 
     user_id = getuid(s1,token,upn)
     group = getguid(s1,token,gp)
+    if group == None:
+        print("Grupo no encontrado")
+        exit()
+    print(group)
     s2 = "https://" + s1 + ".goskope.com/api/v2/scim/Groups/" + group
 
     headers1 = {'Netskope-Api-Token':token, 'accept':'application/scim+json;charset=utf-8', 'Content-Type': 'application/scim+json;charset=utf-8'}
