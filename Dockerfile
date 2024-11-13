@@ -1,6 +1,6 @@
 FROM docker.io/python:3.13.0
 
-ARG email="htamayo@netskope.com"
+ARG email="hutachah@yahoo.com"
 LABEL "maintainer"=$email
 
 USER root
