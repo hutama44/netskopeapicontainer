@@ -2,16 +2,16 @@
 CLI interface to interact with Netskope's API in container format / Interface CLI para interactuar con el API de Netskope en formato de contenedor
 
 # Required API Privileges/Permisos Requeridos en el API
-/api/v2/steering/apps/private
-/api/v2/policy/npa/rules
-/api/v2/steering/apps/private/tags	
-/api/v2/incidents/user/uciimpact	
-/api/v2/scim/Groups	
-/api/v2/steering/apps/private/tags/getpolicyinuse	
-/api/v2/incidents/users/uci/reset	
-/api/v2/scim/Users	
-/api/v2/ubadatasvc/user/uci	
-/api/v2/policy/npa/policygroups 
+/api/v2/steering/apps/private \
+/api/v2/policy/npa/rules \
+/api/v2/steering/apps/private/tags \	
+/api/v2/incidents/user/uciimpact \	
+/api/v2/scim/Groups	\
+/api/v2/steering/apps/private/tags/getpolicyinuse \	
+/api/v2/incidents/users/uci/reset \	
+/api/v2/scim/Users	\
+/api/v2/ubadatasvc/user/uci \	
+/api/v2/policy/npa/policygroups \ 
 
 # Usage/Uso
 Clone the repository locally: / Clonar el repositorio localmente:
