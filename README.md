@@ -12,7 +12,6 @@ CLI interface to interact with Netskope's API in container format / Interface CL
 /api/v2/scim/Users	\
 /api/v2/ubadatasvc/user/uci \
 /api/v2/policy/npa/policygroups \
-
 # Usage/Uso
 Clone the repository locally: / Clonar el repositorio localmente:
 ```
